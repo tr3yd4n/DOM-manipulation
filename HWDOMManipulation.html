@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <script>
+    //EXERCISE 1 Write a function for changing the title of the document in something else.
+    //EXERCISE 2 Write a function for changing the class of the title of the page in "myHeading".
+    //EXERCISE 3 Write a function for changing the text of only the p which are children of a div.
+    //EXERCISE 4 Write a function for changing the destination of every link to https://www.google.com
+    //EXERCISE 5 Write a function for adding a new item in the second list.
+    //EXERCISE 6 Write a function for adding a second paragraph to the div.
+    //EXERCISE 7 Write a function for making the first UL disappear.
+    //EXERCISE 8 Write a function for making the background of every UL green.
+    //EXERCISE 9 Make the heading of the page change color every time the user clicks on it.
+    //EXERCISE 10 Change the footer text with something else when the user clicks on it.
+    //EXERCISE 11 Attach an event listener to the input field in the page for console logging its value just after any keystroke.
+    //EXERCISE 12 Create a new welcome alert message when the page successfully loads.
+    //EXERCISE 13 Use HTML5 tags to divide the content of the page in a more semantic way.
+    </script>
+
+    <style>
+      .myHeading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="Title">This is the title of the page</h1>
+      <h2 id="subTitle">This is the subtitle of the page</h2>
+    </header>
+
+    <main>
+      <hr />
+
+      <ul id="firstList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <ul id="secondList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <a href="strive.school">This link goes to Strive School</a>
+
+      <div id="div1">
+        <p>This text is just for the exercise</p>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="input-field"
+          placeholder="input field for the exercise"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <p>And this text is just for the exercise too!</p>
+    </footer>
+
+    <script>
+        function changeTitle(){
+            document.getElementById("Title").innerHTML = "NEW TITLE"
+            }
+            changeTitle
+  
+        function changeClass(){
+            document.getElementById("Title").className = "New Class"
+            }
+            changeClass
+
+        function changePcontent(){
+            document.querySelectorAll("div p")[0].innerText = "I AM THE CHANGED TEXT"
+            }
+            changePcontent
+
+        function changeURL(){
+            document.getElementByID("a")[0].changeURL = "href=https://www.google.com"
+            }
+            changeURL//////doesn't work
+
+        function addNewItemList2(){
+            document.getElementById("secondList").append = "New Item"
+            }
+            addNewItemList2/// runs through till end but doesnt generate new list item
+        
+        function addNewParagraph(){
+            document.createElement("div1") = "p"
+            }
+            addNewParagraph /// doesn't work
+            
+        function firstUlDisappear(){
+            document.getElementByID("firstList").remove = "firstList"
+            }
+            firstUlDisappear /// doesn't work list instead of doc?
+        
+        function makeGreen(){
+            document.getElementsByTagName("ul").style.backgroundColor = "green"
+        }
+        makeGreen /// doesn't work  
+
+        
+//   /* EXERCISE 9
+//   Make the heading of the page change color every time the user clicks on it.
+//   */
+        // function changeHeadingColor(){
+        //     make heading a hyperlink
+        //     select heading for on click event
+        //     resolve color change
+        // }
+
+//   /* EXERCISE 10
+//   Change the footer text with something else when the user clicks on it.
+//   */
+        // function changeFooterText(){
+        // make footer a hyperlink
+        // select footer for on click event
+        // resolve color change
+        // }
+
+/* EXERCISE 11
+//   Attach an event listener to the input field in the page for console logging its value just after any keystroke.
+//   */
+        //add to input field
+        //log ketsrokes const inputField = document.getElementById("input-field");
+
+/* EXERCISE 12
+//   Create a new welcome alert message when the page successfully loads.
+//   */
+            //   window.onload = function () {
+
+
+/* EXERCISE 13
+//   Use HTML5 tags to divide the content of the page in a more semantic way.
+//   */
+            //Use HTML5 tags to divide the content of the page in a more semantic way.
+
+        
+    </script>
+  </body>
+</html>
